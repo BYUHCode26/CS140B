@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet and Definitions Project</title>
+</head>
+<body>
+    <h1>Kenneth Stone III</h1>
+    <h2>Internet</h2>
+    <p>A global digital place where people can connect with basically anyone with an 
+        device.</p>
+    <h2>Web</h2>
+    <p>A source on the internet that allows you to view and access much information about
+        anything that is listed.  
+    </p>
+    <h2>How are the Internet and the Web different?</h2>
+    <p>The internet is just an area people's device's can meet and connect in order to
+        communicate.  The web is just a huge resource on the Internet that people
+        have access to.
+    </p>
+    <h2>ASCII and Unicode</h2>
+    <p> Both have a code system that we use in order for the computer to convert 
+        characters or digits into text, or vice versa.  ASCII stands for American 
+        Standard Code for Information Interchange.  It deals with characters, punctuation,
+        and numbers while Unicode has a code system with those listed, and basically any
+        symbol.
+    </p>
+    <h2>What is UTF-8</h2>
+    <p>UTF-8, also known as Unicode Transformation Format, is used to store text from 
+        their designated characters into bytes.  This also depends if we are converting characters,
+        punctuations, symbols, etc.
+    </p>
+    <h2>URL</h2>
+    <p>It is basically the links you type in, the web addresses, that specify the webpage, 
+        and help determine your location on the internet.  It is also known as the
+        Uniform Resource Locator.
+    </p>
+    <h2>Domain Name</h2>
+    <p>It is the usual text we type in order to direct us to the webpage we want.
+        For example: www.MrPresident.org
+    </p>
+    <h2>HTTP</h2>
+    <p>Also know as Hypertext Transfer Protocol.  This is what the Web reads in 
+        order to determine what webpage you want to view, as well as where to 
+        transfer your web information.  
+    </p>
+    <h2>HTTPS</h2>
+    <p>It is basically the same as HTTP, except it keeps your information safe.  Meaning,
+        you transfer your information somewhere on the Web without losing your data.
+    </p>
+    <h2>IP Address</h2>
+    <p>It is a unique sequence of numbers that identifies a device, or your location of 
+        data. 
+    </p>
+    <h2>DNS</h2>
+    <p>Also known as Domain Name System where the Web converts the domain name into an
+        IP in order to read, and direct the user to the correct position on the Web.
+    </p>
+    <h2>W3C Recommendations</h2>
+    <p>They are tools the Web uses in order to ensure that the websites are secure
+        and working.
+    </p>
+    <h2>XML, XHTML, HTML, HTML5</h2>
+    <p>These are the main tools the Web uses in order the make the webpages work,
+        and for the users to understand how to use it, and access it.  XML is the
+        organizer, XHTML is the structure, HTML is the how the webpages are understandable
+        to humans, and HTML5 is the audio and visuals of the webpages.  
+    </p>
+</body>
+</html>
