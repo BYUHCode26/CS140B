@@ -1,0 +1,41 @@
+body {
+    background-color: #C42481;
+    color: #eec40c;
+    header{
+        background-color: orange;
+        color: rgb(3, 3, 241);
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+    nav{
+        font-size: 15px;
+        font-weight: bold;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    #hero2{
+        color: red;
+    }
+    }
+    main{
+        h2{
+            background-color: pink;
+            color: blue;
+        }
+        p{
+            color:#fbd100;
+        }
+        p.Q{
+            color: rgb(0, 255, 17);
+        }
+        dt.Q{
+            color: rgb(0, 255, 17);
+        }
+    }
+    footer{
+        font-size: 12px;
+        background-color: black;
+        color: white;
+    }
+
