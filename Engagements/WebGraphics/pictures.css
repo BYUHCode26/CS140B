@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+    main{
+        h3{
+            color: blue;
+            font-style: bold;
+            font-size: 30px;
+        }
+        p.Head{
+            font-weight: bold;
+            color: red;
+        }
+        #Quote {
+            font-style: italic; 
+        }
+        p.Link{
+            color: green;
+        }
+    }
+    font-family: Arial, Helvetica, sans-serif
+}
