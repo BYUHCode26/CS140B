@@ -1,12 +1,15 @@
 body{
-    background: url(bluebg.jpg) repeat blue;
+    background-image: url(bluebg.jpg);
+    background-color: blue;
+    background-repeat: repeat;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
-    background-image: url(redFlowerSmall.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(redFlowerSmall.png) no-repeat top right;
     list-style-image: url(dot.png);
+    img{
+        width: 350px;
+    }
 }
