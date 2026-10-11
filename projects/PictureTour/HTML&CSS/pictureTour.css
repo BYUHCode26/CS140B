@@ -1,0 +1,37 @@
+
+body{
+    header{
+        font-size: 30px;
+        background: url(../Pictures/PalmTreeIcon.png) no-repeat top right;
+
+    }
+    nav a.highlight{
+        color: #FF00DD;
+        background-color: #ffffff50;
+    }
+
+    main {
+        li {
+            list-style-image: url(../Pictures/starbullet.png);
+            font-size: 18px;
+        }
+        h1 {
+            font-style: italic;
+            color: #8844FF;
+        }
+        p.ImageHeaders {
+            font-size: 20px;
+            font-style: italic;
+            color: #8844FF;
+        }
+        font-size: 18px;
+    }
+    footer {
+        background-color: #DD2200;
+        color: white;
+    }
+    background: url(../Pictures/whiteBrickBackground.jpg) white repeat;
+    background-size: 500px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;  
+}
