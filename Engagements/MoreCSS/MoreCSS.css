@@ -1,0 +1,20 @@
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+* {
+    outline: thin solid blue;
+}
+.p1 {
+    width: 50ex;
+    height: 10ex;
+    margin: 0px;
+    padding: px;
+    overflow: hidden;
+}
+.sub1 {
+    width: 400px;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    border: 3px black solid;
+}
