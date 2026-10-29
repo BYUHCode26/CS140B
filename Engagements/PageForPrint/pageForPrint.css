@@ -1,0 +1,109 @@
+/* Font, Main Background, Secondary Background Color*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../BlueBackground.png) repeat top right;
+    background-color: #55555650;
+    margin: 0;
+}
+html {
+    margin: 0;
+}
+header {
+    background-color: rgb(215,215,144);
+}
+header h1 {
+    margin: 0;
+}
+/*  */
+nav {
+    display: flex;
+    background-color: rgb(188 150 150);
+    justify-content: space-around;
+}
+nav a{
+    display: block;
+    padding: 5px 20px;
+    background-color: rgb(150 150 75);
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+}
+
+.mainrow {
+    display: flex;
+    
+}
+
+.sidebar {
+    width: 25%;
+    border-right: 2px solid black;
+}
+
+main {
+    width: 75%;
+}
+
+.bold {
+    font-weight: bold;
+    color: blue;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card img {
+    width: 100%;
+    border: 2px solid rgb(150 200 250);
+    border-radius: 10px;
+}
+.card h2 {
+    margin: 0;
+}
+.card a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(200, 150, 200);
+    width: 95%;
+    margin-bottom: 0 auto 5px auto;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.card a:hover {
+    color: #3388AA;
+}
+
+footer {
+    background-color: white;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    .mainrow {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    .card {
+        width: 95%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        border-bottom: 1px solid white;
+        padding: 15px 10px;
+    }
+}
+
