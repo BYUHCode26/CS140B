@@ -1,0 +1,58 @@
+body {
+    background-image: url(BackgroundSchedule.jpg);
+    background-color: aliceblue;
+    color: white;
+
+}
+/* Navigation Links */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+nav a{
+   color: lightpink; 
+   background-color: rgb(137, 73, 80);
+
+   padding: 5px;
+   border: 2px solid black;
+   margin-bottom: 10px;
+}
+
+nav a:hover {
+    color: purple;
+    background-color: rgb(113, 177, 170);
+}
+
+/* Schedule Format
+    Table
+        Labels
+        Date
+        Classes
+        Next Date
+        Classes
+        Total Credits
+ */
+ 
+ 
+.labelsR {
+    border: 2px solid black;
+}
+.Schedule {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    color: #55EEBB;
+}
+
+footer {
+    background-color: black;
+    color: white;
+
+    padding: 10px;
+}
