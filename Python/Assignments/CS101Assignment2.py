@@ -12,8 +12,16 @@ print("Problem 1")
 x = int(input("Enter a number:"))
 y = int(input("Enter a second number:"))
 
+if(x > y):
+    print("The variable x is the largest with a value of",x)
+elif(x <  y):
+    print("The variable y is the largest with a value of",y)
+else:
+    print("x and y are equal")
+
 print(" ")
 print("Problem 2")
+print("Done")
 #Modify problem 1 to print "x and y are equal", if the entries are equal or the same output as problem 1 if not equal.
 
 
@@ -23,8 +31,8 @@ print("Problem 3")
 
 x = int(input("Enter a number:"))
 y = int(input("Enter a second number:"))
-if x > y:
-print("x is biggest")
+if (x > y):
+    print("x is biggest")
 
 print(" ")
 print("Problem 4")
@@ -33,11 +41,15 @@ print("Problem 4")
 x = int(input("Enter a number:"))
 y = int(input("Enter a second number:"))
 op = input("Enter an operation (A or M):")
+
+if (op == "A"):
+    print(x,"+",y,"=",x+y)
+else:
+    print(x,"*",y,"=",x*y)
 # If op is M then multiply the numbers together.  
 # If op is A, then add the two numbers together. 
 # Print the result similar to the following:
     #45 + 8 = 53 or 7 * 3 = 21
-
 
 print(" ")
 print("Problem 5")
@@ -45,6 +57,13 @@ print("Problem 5")
 
 unitPrice = 4.95
 qty = int(input("Enter quantity purchased:"))
+
+if (qty >= 5 and qty <= 9):
+    total = qty * unitPrice * 0.05
+    print("The total due for",qty,"items is",total)
+elif (qty > 9):
+    total = qty * unitPrice * 0.1
+    print("The total due for",qty,"items is",total)
 # Compute the total amount due.  
 # If the quantity purchased is between 5 and 9 inclusive, apply a 5% discount to the total.  
 # If the quantity purchased is at least 10, apply a 10% discount. 
@@ -55,10 +74,28 @@ print(" ")
 print("Problem 6")
 # Start with this code:
 
-color = <a color>  # put a color here; for example: "Red"
-make = <car make> # put a car make here; for example "Ford" or "Ferrari"
-modelYr = <model year> # put an integer value here
-mileage = < car mileage> # put an integer value here
+color = "Green"  # put a color here; for example: "Red"
+make = "Ferrari" # put a car make here; for example "Ford" or "Ferrari"
+modelYr = 2018 # put an integer value here
+mileage = 80000 # put an integer value here
+
+if (color == "Red"):
+    if (modelYr >= 2020):
+        print("BUY")
+    elif (modelYr < 2020):
+        if (mileage >= 75000):
+            print("BUY")
+        else:
+            print("DO NOT BUY")        
+elif (color == "Yellow"):
+    if (make == "Ferrari"):
+        print("BUY")
+    else:
+        print("DO NOT BUY")
+elif (color == "Green"):
+    print("BUY")
+else:
+    print("DO NOT BUY")
 
 # Complete with the python code that prints either "BUY" or "DO NOT BUY" based on the values you enter for the four variables above 
     #(color, make, modelYr and mileage).  

@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>Tables</h1>
+        <h1 class = "h1">Tables</h1>
     </header>
     <nav>
         <a href = "#">Home</a>
@@ -19,7 +19,8 @@
         <a href = "#">More</a>
         <a href = "#">Help</a>
     </nav>
-    <table border="1">
+    <table>
+        <caption>My School Schedule</caption>
         <thead>
             <tr class = "labels">
                 <th scope = "row" class = "labelsR">Department</th>
@@ -49,11 +50,11 @@
                 <td class = "classInfo2">3</td>
             </tr>
             <tr>
-                <td class = "classInfo3">140</td>
+                <td id = "num">140</td>
                 <td class = "classInfo3">Web Design</td>
                 <td class = "classInfo3">Portable 2</td>
                 <td class = "classInfo3">11:00am - 11:50am Monday/Wednesday/Friday</td>
-                <td class = "classInfo3">3</td>
+                <td id = "cred">3</td>
             </tr>
             <tr>
                 <td class = "classInfo4">REL</td>
@@ -127,6 +128,7 @@
         </tfooter>
     </table>
     <main>
+        <h2 class = "Questions">November 2 Questions</h2>
         <p class="highlight">When do you use a table?</p>
         <p>I use a table when there is so much information and data that needs to
             be organized.  For example, my school schedule.
@@ -147,6 +149,27 @@
         </p>
         <p>Not necessarily.  It give gave me more code to work with, but it didn't recommend more help 
             on code.  It was mainly just what I asked and I kept my information to what I knew.
+        </p>
+        <hr>
+        <br>
+        <h2 class = "Questions">November 4 Questions</h2>
+        <p class="highlight2">Why don't we use the border attribute?</p>
+        <p>Noticeably, we had to remove the border attribute in the HTML, because HTML focuses on the
+            structuring of the webpage, while CSS focuses on the presentation of the webpage.
+            Therefore, it is not recommended to use the border attribute specifically for this reason.
+        </p>
+        <p class="highlight2">What is the easiest way to color every other row a different color?</p>
+        <p>It is mainly easier to use the structure tags that help structure the table.  For example:
+            the "th" tag.  Then, you can differentiate subtags with classes, and then 
+            change their colors through CSS.  That way, it is organized, and easy to look back to when
+            you need to change things.
+        </p>
+        <p class="highlight2">What does the value in the parentheses of your structural pseudo-class mean?
+            Give one other value you could use and which rows it would select.
+        </p>
+        <p>The value in the parentheses just specifies what elements
+            you want to be changed.  For example, you can manipulate the CSS
+            of structural pseudo-class to make a row on the table red.
         </p>
     </main>
     <footer>
