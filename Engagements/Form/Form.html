@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Kenneth's Web Design</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Profile</a>
+        <a href="#">More</a>
+        <a href="#">Help</a>
+    </nav>
+    <main>
+        <form action="formprocessing.html" method="post">
+            <div class="form-row">
+                <label for="personName">Full Name: </label>
+                <input id = "personName" type="text" name = "fullname" placeholder = "Full Name"><br>
+            </div>
+            <div class="form-row">
+                <label for="email">Email: </label>
+                <input id = "email" type="text" name = "email" placeholder = "Email"><br>
+            </div>
+            <div class="form-row">
+                <label for="password">Password: </label>
+                <input id = "password" type="password" name = "pass" placeholder = "Enter Password"><br>
+            </div>
+            <div class="radioButton-row">
+                <fieldset>
+                    <legend>Choose a Weapon</legend>
+
+                    <input type="radio" id = "katana" name = "weapon" value = "katana">
+                    <label for="katana">Katana</label>
+
+                    <input type="radio" id = "scythe" name = "weapon" value = "scythe">
+                    <label for="scythe">Scythe</label>
+
+                    <input type="radio" id = "dagger" name = "weapon" value = "dagger">
+                    <label for="dagger">Dagger</label>
+
+                    <input type="radio" id = "hammer" name = "weapon" value = "hammer">
+                    <label for="hammer">Hammer</label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Christlike Attributes</legend>
+
+                    <label><input type="checkbox" name = "Forgiveness" value = "Forgiveness">Forgiveness</label>
+                    <label><input type="checkbox" name = "Love" value = "Love">Love</label>
+                    <label><input type="checkbox" name = "Submissive" value = "Submissive">Submissive</label>
+
+                </fieldset>
+            </div>
+                <input class = "submit" type="submit">
+        </form>
+        <div class="questions">
+            <h1>Form</h1>
+            <p class="bold">The form tag has an "action" attribute. What does it do?</p>
+            <p>The <strong>Action Attribute</strong> takes the data from the "form" and
+            sends that data to the designated webpage, the action attribute locates/directs this webpage.</p>
+            <p class="bold">The form tag has a "method" attribute. What does it do?</p>
+            <p>The method attribute determines how your data on your form is transported through your
+                URL.
+            </p>
+            <p class="bold">What is the difference between a "POST" and a "GET"?</p>
+            <p>The method "get" will transport your form data answers in the URL, 
+                while the "post" method transfers the data, just not visibly on the URL.</p>
+            <p class="bold">How do you fill in a form control with a pre-set value, 
+                and how is that different from a placeholder? 
+                Answer for each of these: text box, textarea, 
+                select box, checkbox, and radio button.
+            </p>
+            <p>A preset value is just text that is already typed and ready in the textbox, while
+                a placeholder text is just text in the textbox, but the textbox is still empty.
+                <ol>
+                    <li>Textboxes have placeholders as grey text that disappears once 
+                        you type actual text in the textbox.
+                    </li>
+                    <li>Textarea is about the same thing, just with a larger textbox.</li>
+                    <li>Select Boxes will automatically have a box already checked.  Although,
+                        there is not a way to use placeholders.
+                    </li>
+                    <li>The same goes for radio buttons, but how preset values are for radio 
+                        buttons are really just buttons already filled as well.
+                    </li>
+                </ol>
+            </p>
+            <p class="bold">List all the form controls that HTML5 added. Which ones did you put in your form?</p>
+            <p>I put in the input tag, the textarea, and the button tag of HTML5.  These are the main form
+                controls that you can put in your form:
+            </p>
+            <ol>
+                <li>Input</li>
+                <li>Textarea</li>
+                <li>Select</li>
+                <li>Button</li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 November 9 10:38 AM | Kenneth Stone III
+    </footer>
+</body>
+</html>
