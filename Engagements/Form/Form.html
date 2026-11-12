@@ -20,48 +20,68 @@
     </nav>
     <main>
         <form action="formprocessing.html" method="post">
-            <div class="form-row">
-                <label for="personName">Full Name: </label>
-                <input id = "personName" type="text" name = "fullname" placeholder = "Full Name"><br>
-            </div>
-            <div class="form-row">
-                <label for="email">Email: </label>
-                <input id = "email" type="text" name = "email" placeholder = "Email"><br>
-            </div>
-            <div class="form-row">
-                <label for="password">Password: </label>
-                <input id = "password" type="password" name = "pass" placeholder = "Enter Password"><br>
-            </div>
-            <div class="radioButton-row">
+            <fieldset class = "mainField">
+                <legend class = "mainLegend">About Me</legend>
                 <fieldset>
-                    <legend>Choose a Weapon</legend>
-
-                    <input type="radio" id = "katana" name = "weapon" value = "katana">
-                    <label for="katana">Katana</label>
-
-                    <input type="radio" id = "scythe" name = "weapon" value = "scythe">
-                    <label for="scythe">Scythe</label>
-
-                    <input type="radio" id = "dagger" name = "weapon" value = "dagger">
-                    <label for="dagger">Dagger</label>
-
-                    <input type="radio" id = "hammer" name = "weapon" value = "hammer">
-                    <label for="hammer">Hammer</label>
-
+                    <legend>Important Information</legend>
+                    <div class="form-row">
+                        <label for="personName">Full Name:</label>
+                        <input id = "personName" type="text" name = "fullname" placeholder = "Full Name"><br>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input id = "email" type="email" name = "email" placeholder = "Email"><br>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input id = "password" type="password" name = "pass" placeholder = "Enter Password"><br>
+                    </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Christlike Attributes</legend>
-
-                    <label><input type="checkbox" name = "Forgiveness" value = "Forgiveness">Forgiveness</label>
-                    <label><input type="checkbox" name = "Love" value = "Love">Love</label>
-                    <label><input type="checkbox" name = "Submissive" value = "Submissive">Submissive</label>
-
-                </fieldset>
-            </div>
+                <div class="radioButton-row">
+                    <fieldset>
+                        <legend>Choose a Weapon</legend>
+                        <div class="check-row">
+                            <div class="spacer">
+                                <input type="radio" id = "katana" name = "weapon" value = "katana">
+                                <label for="katana">Katana</label>
+                            </div>
+                            <div class="spacer">
+                                <input type="radio" id = "scythe" name = "weapon" value = "scythe">
+                                <label for="scythe">Scythe</label>
+                            </div>
+                            <div class="spacer">
+                                <input type="radio" id = "dagger" name = "weapon" value = "dagger">
+                                <label for="dagger">Dagger</label>
+                            </div>
+                            <div class="spacer">
+                                <input type="radio" id = "hammer" name = "weapon" value = "hammer">
+                                <label for="hammer">Hammer</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Christlike Attributes</legend>
+                        <div class="spacer">
+                            <label><input type="checkbox" name = "Forgiveness" value = "Forgiveness">Forgiveness</label>
+                        </div>
+                        <div class="spacer">
+                            <label><input type="checkbox" name = "Love" value = "Love">Love</label>
+                        </div>
+                        <div class="spacer">
+                            <label><input type="checkbox" name = "Submissive" value = "Submissive">Submissive</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea id = "comment" rows = "8" cols = "40" name = "comment" placeholder = "Display Text"></textarea><br>
+                </div>
+            </fieldset>
                 <input class = "submit" type="submit">
         </form>
         <div class="questions">
             <h1>Form</h1>
+            <h2>November 9 Questions</h2>
             <p class="bold">The form tag has an "action" attribute. What does it do?</p>
             <p>The <strong>Action Attribute</strong> takes the data from the "form" and
             sends that data to the designated webpage, the action attribute locates/directs this webpage.</p>
@@ -102,6 +122,44 @@
                 <li>Select</li>
                 <li>Button</li>
             </ol>
+            <h2>November 11 Questions</h2>
+            <p class="bold">What are different ways to style your form?</p>
+            <ol>
+                <li>Fieldsets:</li>
+                <ul>Fieldsets are very useful for making your form more organized
+                    and easier to categorize information.  They appear as borders around
+                    the selected data.
+                </ul>
+                <li>Legend</li>
+                <ul>Legends are used to make the title or heading for the fieldsets.
+                    These help the reader or user know what is being displayed.
+                </ul>
+                <li>Inputs</li>
+                <ul>You can create the type of information asked from the user,
+                    along with how the information can be portrayed.
+                </ul>
+            </ol>
+            <p>These can all be stylized the same as any text or tag.
+            </p>
+            <p class="bold">Why does the professor like to use flex?</p>
+            <p> When it comes to positioning, displaying these as flex 
+                can help make styling easier, and organized.  Also, flex makes it
+                easier to distribute and place text boxes and text to make it look more
+                professional.
+            </p>
+            <p class="bold">What makes for a good mobile form?</p>
+            <p>
+                <ul>
+                    <li>All of the buttons on the form have to be big enough 
+                        for the fingers.
+                    </li>
+                    <li>The text has to be big enough to be readable</li>
+                    <li>The text should also be evenly spaced</li>
+                    <li>The form should not have any text overfilling, meaning it cannot
+                        cross the relative margin
+                    </li>
+                </ul>
+            </p>
         </div>
     </main>
     <footer>

@@ -20,29 +20,99 @@ nav a{
     text-decoration: none;
 
     border: 2px solid black;
-    padding: 3px;
+    padding: 5px;
 }
 nav a:hover {
     color: rgb(115, 225, 155);
     background-color: #0044BB;
     text-decoration: underline;
 }
-/* Input Text */
-.form-row {
-    margin: 5px 5px 5px 0px;
-}
 
+/* Input Text */
+/* Color of background and text in form */
+/* Form Exterior and Title */
+.mainField {
+    background-color: rgb(183, 70, 183);
+}
+.mainLegend {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+
+    border: black solid 3px;
+}
+/* Form Exterior of Questions and titles */
+fieldset {
+    background-color: blue;
+    border: 3px solid white;
+    box-shadow: 3px 3px 3px rgb(50, 225, 155);
+
+    margin-top: 8px;
+    border-radius: 10px;
+}
+/* The text above the information */
+legend {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:black;
+    color: white;
+    font-size: 18px;
+
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+/* All form data types are positioned */
+.form-row {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 10px 0px;
+    gap: 10px;
+}
+/* All labels over textboxes */
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+.form-row input {
+    padding: 5px;
+    background-color: rgb(243, 205, 243);
+}
+/* Check-Box Spacing */
+.spacer {
+    text-align: left;
+    padding: 10px;
+}
 /* Submit Button */
 .submit {
-    padding: 3px;
-    margin: 5px 0px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+
+    padding: 8px;
+    margin: 10px 0px;
+    width: 80px;
+}
+/* Submit Button Interaction */
+.submit:hover {
+    background-color: white;
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
+/* Out of the Form */
 /* Bold Questions */
 .bold {
     font-size: 18px;
     font-weight: bold;
     color: #FFAAFF;
+}
+/* Question Timeline Headers */
+h2 {
+    background-color: #0044BBff;
+    text-decoration: underline;
 }
 /* Question Background */
 .questions {
@@ -55,4 +125,20 @@ footer {
     font-weight: bold;
 
     padding: 6px;
+}
+/* Changes form display for phone users */
+@media ONLY screen AND (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+    .form-row label {
+        text-align: left;
+    }
+    .submit {
+        font-size: 20px;
+        width: 100%;
+    }
 }
