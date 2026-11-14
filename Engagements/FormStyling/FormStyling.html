@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link rel="stylesheet" href="FormStyling.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Kenneth's Form Styling Webpage</h1>
+        <hr>
+        <br>
+    </header>
+    <!-- <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Profile</a>
+        <a href="#">More</a>
+        <a href="#">Help</a>
+    </nav> -->
+    <main>
+        <h1>Form Styling</h1>
+    </main>
+    <!-- Entire Form -->
+    <form action="IndexProj.html" method="post">
+        <!-- Terms and Conditions Section -->
+        <fieldset class = "Outline">
+            <legend>Terms and Conditions</legend>
+            <p class = "description">Enter the required personal information, then answer each
+                question honestly.  This is a careful survey about your interests
+                and determines the compatibility of myself and you as a person.
+                But, you have to agree to the terms of conditions to continue.
+            </p>
+            <p class = "description">This service is operated by KBSIII Encrypted Studies of Nonsense.  We are registered
+                in Antarctica and the Pacific Ocean under company number "Syntax" and have registered our office 
+                at a mental asylum in Lakewood, WA.  Our VAT number is really long.
+            </p>
+            <ol class = "description">
+                <li>Please read these terms and conditions (The Terms) carefully.  
+                    By accessing and using our website and any content and features therein (including without limitation
+                    anything that is even on here), you indicate your acceptance of these Terms, the not so private Private Policy,
+                    our absent Code of Conduct, and any other notices that you want to waste your time reading
+                    because we like to make really long and complicated conditions.  (Each of which is incorporated from me
+                    personally). The Privacy Policy and Nonexistent Code of Conduct can be accessed with a little bit of imagination
+                    and a hint of LSD.
+                </li>
+                <li>If you do not accept these Terms we will target the general location of your PC
+                    and ensure that you will never be notified about GTA VI announcements.  You will also be
+                    stripped from downloading its immense out of data and bytes, and therfore unable to become present
+                    with the initial hype. 
+                </li>
+                <li>We may update these Terms at any time.  Please review and rehearse the Terms everyday
+                    of your life to ensure you are aware of any changes, and can perform well when activated as a sleeper
+                    agent and asked to recite the Terms by heart.  Your continued access to and/or use of our Services
+                    after changes have been made to the Terms indicates your agreement to be legally bound by the updated and/or
+                    amended Terms.  Otherwise, you are also in the palm of my dexterous hand.
+                </li>
+            </ol>
+            <!-- Terms and Conditions Radio Button -->
+            <div class="terms">
+                <input type="radio" id = "terms" name = "Terms">
+                <label for="terms">I agree to the Terms and Conditions above</label>
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="Enter Password">
+            </div>
+            <!-- Account Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="PersonInfo">
+                    <!-- Name -->
+                    <div class="form-row">
+                        <label for="personName">Name</label>
+                        <input id = "personName" type="name" name = "fullName" placeholder="Enter Name">
+                    </div>
+                    <!-- Email -->
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id = "email" type="email" name = "Email" placeholder="Enter Email">
+                    </div>
+                    <!-- Birthday -->
+                    <div class="form-row">
+                        <label for="birthday">Birth Date</label>
+                        <input id = "birthday" type="date" name = "birthDate">
+                    </div>
+                    <!-- Gender -->
+                    <div class="form-row">
+                        <div class="gender">
+                            <label for="gender">Gender</label>
+                            <input type="radio" id="male" name="gender">
+                            <label class = "bubble" for="female">M</label>
+                            <input type="radio" id="female" name="gender">
+                            <label class = "bubble" for="gender">F</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- Multi-Choice Questions of Experience -->
+            <fieldset>
+                <!-- Checkboxes (Questions 1 and 3) -->
+                <!-- Radio Buttons (Question 2) -->
+                <!-- Text Area (Last Question) -->
+                <legend>Other Additional Information</legend>
+                <!-- Question 1 -->
+                <p class="Q">What is/are your nationalities?</p>
+                
+                <div class="check-row">
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE1Q1" name = "nationalities">
+                        <label class = "bubble" for="OAIE1Q1">Caucasian</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE1Q2" name = "nationalities">
+                        <label class = "bubble" for="OAIE1Q2">Black</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE1Q3" name = "nationalities">
+                        <label class = "bubble" for="OAIE1Q3">Asian</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE1Q4" name = "nationalities">
+                        <label class = "bubble" for="OAIE1Q4">European</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE1Q5" name = "nationalities">
+                        <label class = "bubble" for="OAIE1Q5">Austrailian</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE1Q6" name = "nationalities">
+                        <label class = "bubble" for="OAIE1Q6">United Kingdom</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE1Q7" name = "nationalities">
+                        <label class = "bubble" for="OAIE1Q7">Antarctican</label>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <p class="Q">How much experience do you have with Swahili?</p>
+                <div class="radio-row">
+                    <div class="spacer">
+                        <input type="radio" id = "OAIE2Q1" name = "experience">
+                        <label class = "bubble" for="OAIE2Q1">No experience</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "OAIE2Q2" name = "experience">
+                        <label class = "bubble" for="OAIE2Q2">1-2 years</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "OAIE2Q3" name = "experience">
+                        <label class = "bubble" for="OAIE2Q3">2-4 years</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "OAIE2Q4" name = "experience">
+                        <label class = "bubble" for="OAIE2Q4">5+ years</label>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <p class="Q">What interested you into clicking this form?</p>
+                <div class="check-row">
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE3Q1" name = "interest">
+                        <label class = "bubble" for="OAIE3Q1">I was interested in learning Swahili</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE3Q2" name = "interest">
+                        <label class = "bubble" for="OAIE3Q2">The form looked appealing to my eyes</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE3Q3" name = "interest">
+                        <label class = "bubble" for="OAIE3Q3">I was forced to look at this form</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE3Q4" name = "interest">
+                        <label class = "bubble" for="OAIE3Q4">I wanted to grief</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE3Q5" name = "interest">
+                        <label class = "bubble" for="OAIE3Q5">I want to see where I am at for learning Swahili</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="checkbox" id = "OAIE3Q6" name = "interest">
+                        <label class = "bubble" for="OAIE3Q6">Work related purposes</label>
+                    </div>
+                </div>
+                <!-- Textarea Others -->
+                <div class="comment">
+                    <label for="OAIE3Q7" class = "textarea">Others</label>
+                    <textarea id = "others" rows = "4" cols = "40" name = "interest" placeholder = "Display Text"></textarea><br>                   
+                </div>
+            </fieldset>
+            <!-- Swahili to English Translation (vice versa)-->
+            <fieldset>
+                <legend>Swahili to English Translation (vice versa)</legend>
+                <!-- Question 1 -->
+                <h4>Question 1</h4>
+                <p class="Q">What does kuunza mean in English?</p>
+                <div class="radio-row">
+                    <div class="spacer">
+                        <input type="radio" id = "SWE1Q1" name = "E1Q1">
+                        <label class = "bubble" for="SWE1Q1">To employ</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE1Q2" name = "E1Q1">
+                        <label class = "bubble" for="SWE1Q2">To deploy</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE1Q3" name = "E1Q1">
+                        <label class = "bubble" for="SWE1Q3">To poop</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE1Q4" name = "E1Q1">
+                        <label class = "bubble" for="SWE1Q4">To start</label>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <h4>Question 2</h4>
+                <p class="Q">What does asante mean in English?</p> 
+                <div class="radio-row">
+                    <div class="spacer">
+                        <input type="radio" id = "SWE2Q1" name = "E1Q2">
+                        <label class = "bubble" for="SWE2Q1">Thank you</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE2Q2" name = "E1Q2">
+                        <label class = "bubble" for="SWE2Q2">Your welcome</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE2Q3" name = "E1Q2">
+                        <label class = "bubble" for="SWE2Q3">Invalid</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE2Q4" name = "E1Q2">
+                        <label class = "bubble" for="SWE2Q4">Please</label>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <h4>Question 3</h4>
+                <p class="Q">What does goodbye mean in Swahili?</p>
+                <div class="radio-row">
+                    <div class="spacer">
+                        <input type="radio" id = "SWE3Q1" name = "E1Q3">
+                        <label class = "bubble" for="SWE3Q1">Kwa heri</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE3Q2" name = "E1Q3">
+                        <label class = "bubble" for="SWE3Q2">Swame nela</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE3Q3" name = "E1Q3">
+                        <label class = "bubble" for="SWE3Q3">Kiswahili</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE3Q4" name = "E1Q3">
+                        <label class = "bubble" for="SWE3Q4">Sil te plait</label>
+                    </div>
+                </div>
+                <!--Question 4 -->
+                <h4>Question 4</h4>
+                <p class="Q">What does Samahami mean in English?</p>
+                <div class="radio-row">
+                    <div class="spacer">
+                        <input type="radio" id = "SWE4Q1" name = "E1Q4">
+                        <label class = "bubble" for="SWE4Q1">Pardon me</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE4Q2" name = "E1Q4">
+                        <label class = "bubble" for="SWE4Q2">Excuse me</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE4Q3" name = "E1Q4">
+                        <label class = "bubble" for="SWE4Q3">Mind me</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE4Q4" name = "E1Q4">
+                        <label class = "bubble" for="SWE4Q4">Throw a tantrum</label>
+                    </div>
+                </div>
+                <!-- Question 5 -->
+                <h4>Question 5</h4>
+                <p class="Q">What does chaka cha usiku mean in English?</p>
+                <div class="radio-row">
+                    <div class="spacer">
+                        <input type="radio" id = "SWE5Q1" name = "E1Q5">
+                        <label class = "bubble" for="SWE5Q1">Welcome to my dungeon</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE5Q2" name = "E1Q5">
+                        <label class = "bubble" for="SWE5Q2">Escort me</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE5Q3" name = "E1Q5">
+                        <label class = "bubble" for="SWE5Q3">Dinner</label>
+                    </div>
+                    <div class="spacer">
+                        <input type="radio" id = "SWE5Q4" name = "E1Q5">
+                        <label class = "bubble" for="SWE5Q4">Throw a tantrum</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <!-- Comments -->
+                 <legend>Comments</legend>
+                <p class="Q">Any other comments?  What do you want to see on this form next time?</p>
+                <textarea name="comments" id="comments" placeholder="Display Text" rows = "4" cols = "70"></textarea>
+            </fieldset>
+            <input class = "submit" type="submit">
+        </fieldset>
+    </form>
+    <footer>
+        &copy; 2026 November 13 11:00 AM | Kenneth Stone III
+    </footer>
+</body>
+</html>

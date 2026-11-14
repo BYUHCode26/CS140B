@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6ca26c;
+    background-image: url(FormStylingBG.jpg);
+}
+/* Form and Attributes */
+fieldset {
+    background-color: rgb(114, 182, 191);
+    color: white;
+
+    border: 2px black solid;
+    padding: 10px;
+    margin-top: 8px;
+}
+.Outline {
+    background-color: #6ca26c;
+    color: white;
+
+    border: 2px black solid;
+    padding: 10px;
+    margin: 10px;
+}
+/* Title for Terms and Conditions */
+/* Broken */
+.formHeading {
+    background-color: rgb(225, 221, 151);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+    border: 2px solid black;
+    padding: 5px;
+}
+/* Title for each form section */
+legend {
+    background-color: rgb(225, 221, 151);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+    border: 2px solid black;
+    padding: 5px;
+}
+/* Form Term of Conditions Attribute */
+.description {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Questions Header */
+h4 {
+    margin: 10px 0px;
+}
+/* Questions */
+.Q {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    color: black;
+    background-color: rgb(99, 182, 99);
+
+    border: 2px solid black;
+    padding: 2px;
+    margin-bottom: 3px;
+}
+/* Answers */
+.spacer {
+    padding: 2px;
+}
+/* Textarea */
+textarea {
+    background-color: peachpuff;
+    width: 99%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+/* Input and Label for any type of data collector */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 10px 0px;
+    padding: 2px;
+}
+/* Answer Box Inputs */
+.form-row input {
+    background-color: white;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+/* Really Good leave it alone */
+.form-row label {
+    width: 100px;
+}
+/* Submit */
+.submit {
+    color: white;
+    background-color: blue;
+    font-size: 15px;
+
+    padding: 5px;
+    margin: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100px;
+}
+.submit:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* Footer */
+footer {
+    background-color: white;
+    font-weight: bold;
+
+    padding: 6px;
+}
+
+/* Changes form display for phone users */
+@media ONLY screen AND (max-width: 500px) {
+    .form-row, .gender{
+        flex-direction: column;
+    }
+    .submit {
+        font-size: 20px;
+        width: 100%;
+    }
+}
