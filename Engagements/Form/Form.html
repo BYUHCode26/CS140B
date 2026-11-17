@@ -160,33 +160,46 @@
             </ul>
             <h2>November 16 Questions</h2>
         <p class="bold">What is JavaScript? How did it get its name?</p>
-        <p>Javascript is how developers of HTML and CSS </p>
+        <p>Javascript is how developers of HTML and CSS are able to transfer data from one webpage to another,
+            basically great for interactive purposes.  It got its name from a partnership from between Netscape
+            and Sun Microsystems and was popularized basically because it had affiliated ideas from Java.
+        </p>
         <p class="bold">What are the two ways you can run JavaScript?</p>
+        <p>You can either run Javascript through web-development like 
+            how we put javascript through HTML, or you can use Node.js.  
+        </p>
         <p class="bold">What is jQuery? Is it still popular today?</p>
+        <p>jQuery is used to help with web development by linking some sort of library
+            that makes the webpage interactive.  It is still widely used today, but it is
+            not really a main tool to have.
+        </p>
         <p class="bold">What is the most popular front-end js library today?</p>
+        <p>React is the most used front-end web development, and it is mainly used for UI.  </p>
         <p class="bold">How does your code prevent the form from being submitted? Why do we need to prevent it?</p>
         </div>
     </main>
     <footer>
         &copy; 2026 November 9 10:38 AM | Kenneth Stone III
     </footer>
-    <script>
-        document.gotElementById('signup-form').addEventListener('submit',function(event) {
+</body>
+<script>
+        document.getElementById('signup-form').addEventListener('submit',function(event) {
             event.preventDefault();
-            alert("House is in");
+            alert("Form is submitted!");
 
             const personName = document.getElementById('personName').value;
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             
             if (!personName || !email) {
-                alert("You need a name and email dummah!")
+                alert("You need an email and name!")
                 return;
             }
-            if (!age || age < 18) {
-                alert("You need to be 18 dummah!")
-                return;
-            }
+
+            // if (!age || age < 18) {
+            //     alert("You need to be 18 dummah!")
+            //     return;
+            //}
             const formData = {
                 name: personName,
                 email: email,
@@ -194,7 +207,5 @@
             };
             console.log(formData);
         });
-
     </script>
-</body>
 </html>
