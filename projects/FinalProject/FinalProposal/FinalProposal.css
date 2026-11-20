@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(124, 124, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* Header */
+header {
+    margin: 5px;
+}
+/* Main */
+main {
+    margin: 5px;
+    /* Could add a class */
+    h1 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 19px;
+        text-align: center;
+    }
+}
+footer {
+    background-color: white;
+    font-weight: bold;
+
+    padding: 5px;
+
+
+
+}
