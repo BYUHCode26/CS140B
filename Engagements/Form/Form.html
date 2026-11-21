@@ -20,7 +20,7 @@
     </nav>
     <main>
         <form action="formprocessing.html" method="post" id = "signup-form">
-            <div id="message"> //Check this out
+            <div id="message">
                 <fieldset class = "mainField">
                     <legend class = "mainLegend">About Me</legend>
                     <fieldset>
@@ -36,6 +36,10 @@
                         <div class="form-row">
                             <label for="password">Password:</label>
                             <input id = "password" type="password" name = "pass" placeholder = "Enter Password"><br>
+                        </div>
+                        <div class="form-row">
+                            <label for="age">Age: </label>
+                            <input type="number" id="age" name="age" min="1" max="50">
                         </div>
                     </fieldset>
                     <div class="radioButton-row">
@@ -79,7 +83,7 @@
                     </div>
                 </fieldset>
                     <input class = "submit" type="submit">
-            </div> //Check this out
+            </div>
         </form>
         <div class="questions">
             <h1>Form</h1>
@@ -215,53 +219,14 @@
         &copy; 2026 November 9 10:38 AM | Kenneth Stone III
     </footer>
 </body>
-<script>
-        document.getElementById('signup-form').addEventListener('submit',function(event) {
-            //event.preventDefault(); //Purpose: To go to a new page
-            alert("Form is submitted!");
-
-            const personName = document.getElementById('personName').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            
-            if (!personName || !email) {
-                alert("You need an email and name!")
-                return;
-            }
-
-            // if (!age || age < 18) {
-            //     alert("You need to be 18 dummah!")
-            //     return;
-            //}
-            const formData = {
-                name: personName,
-                email: email,
-                password: password,
-            };
-            console.log(formData);
-
-            //Code for interacting after submission
-            console.log(formData);
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET", "submit.json", true);
-            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-            xhr.onreadystatechange = function () {
-                if(xhr.readyState === 4 && xhr.status === 200) {
-                    //alert('Form submitted successfully.');
-                    message = document.getElementById('message');
-                    const response = JSON.parse(xhr.responseText);
-                    message.textContent = response.message;
-                    form = document.getElementById('signup-form');
-                    form.reset();
-                    //form.textContent = '';
-                } else if (xhr.readyState === 4) {
-                    alert('Error submitting form.');
-                }
-            };
-            xhr.send(JSON.stringify(formData));
-            alert('Success: ${firstName} ${lastName}');
-         });
-        //Add this somewhere for the form to work
-        //<div id = "message"></div>
-    </script>
+<script src  = "formprocessing.js"></script>
 </html>
+
+<!-- 
+
+
+FINSIH THE AGE IN HTML CSS JSON JS
+
+
+
+-->
