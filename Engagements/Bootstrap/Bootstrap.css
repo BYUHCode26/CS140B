@@ -1,0 +1,10 @@
+body {
+    background-color: honeydew;
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.bold {
+    color: rgb(90, 198, 90);
+}
